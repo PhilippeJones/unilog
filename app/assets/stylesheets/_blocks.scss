@@ -1,0 +1,54 @@
+@import 'includes';
+
+html, body,
+div, form, table, figure, figcaption, address,
+h1, h2, h3, h4, h5, h6, hgroup, pre, blockquote,
+ol, ul, li, dl, dt, dd,
+canvas, nav, article, aside, section, header, main, footer, video {
+	box-sizing: border-box;
+}
+
+
+body {
+	color: $near_white;
+	font-family: sans-serif;
+	background: $black;
+	padding: 0;
+	margin: 0;
+}
+
+#top-menu {
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	height: 40px;
+	background: $dark-grey;
+	padding: 4px;
+
+	.menu-button {
+		box-sizing: border-box;
+		display: block;
+		font-size: 36px;
+		line-height: 28px;
+		font-weight: 100;
+		text-align: center;
+		text-decoration: none;
+		width: 50%;
+		height: 100%;
+		background: $black;
+		border-radius: 4px;
+
+		&:hover {
+			text-shadow: 0 0 2px $green-white;
+			border: $green-white solid 1px;
+			box-shadow: 0 0 2px $green-white;
+		}
+
+		&:active {
+			text-shadow: 0 0 2px $red-white;
+			border: $red-white solid 1px;
+			box-shadow: 0 0 2px $red-white;
+		}
+	}
+}
+

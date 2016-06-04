@@ -1,0 +1,28 @@
+@import 'bourbon';
+@import 'neat';
+@import 'normalize';
+@import 'includes';
+
+@import 'blocks';
+@import 'type';
+@import 'forms';
+
+
+// Styles
+
+
+a {
+	color: $blue_white;
+	transition: all 250ms ease;
+
+	&:hover {
+		color: $green_white;
+	}
+
+	&:active {
+		color: $red_white;
+	}
+}
+
+
+

@@ -1,0 +1,3 @@
+= form_for :entry, url: entries_path do |f|
+	= f.text_area :content, class: 'entry-content'
+	= f.submit 'Save', class: 'entry-save'

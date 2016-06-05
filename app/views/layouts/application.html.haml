@@ -9,6 +9,12 @@
 %head
 %body
 
-  = render 'menu'
+  #bounds
+    %nav#top-bar
+      = render 'top_bar'
 
-  = yield
+    %main#content
+      = yield
+
+    %nav#bottom-bar
+      = render 'bottom_bar'

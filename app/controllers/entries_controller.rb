@@ -1,6 +1,7 @@
 class EntriesController < ApplicationController
 	def index
 		@entries = Entry.all
+		@entry = Entry.new
 	end
 
 	def edit
@@ -19,7 +20,7 @@ class EntriesController < ApplicationController
 		@entry = Entry.new(entry_params)
 
 		if @entry.save
-			redirect_to @entry
+			redirect_to entries_path
 		else
 			render 'new'
 		end
@@ -29,7 +30,7 @@ class EntriesController < ApplicationController
 		@entry = Entry.find(params[:id])
 
 		if @entry.update(entry_params)
-			redirect_to @entry
+			redirect_to entries_path
 		else
 			render 'edit'
 		end
